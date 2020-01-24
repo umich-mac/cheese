@@ -93,6 +93,8 @@
 				TargetAttributes = {
 					547EA2061AB896D100AC767A = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = PNC9632PM4;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -101,6 +103,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 547EA1FE1AB896D100AC767A;
@@ -202,16 +205,26 @@
 		547EA20F1AB896D100AC767A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PNC9632PM4;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.its.cheese;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		547EA2101AB896D100AC767A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PNC9632PM4;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.its.cheese;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

@@ -8,10 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
+#import <Cocoa/Cocoa.h>
+#import <IOKit/IOKitLib.h>
+#import <IOKit/Graphics/IOGraphicsLib.h>
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        CGWarpMouseCursorPosition(CGPointMake(200, 200));
+
+        // Connect to windowserver
+        NSApplicationLoad();
+
+        NSRect e = [[NSScreen mainScreen] frame];
+        int height = e.size.height;
+        int width  = e.size.width;
+
+        CGWarpMouseCursorPosition(CGPointMake(width, height));
     }
     return 0;
 }
